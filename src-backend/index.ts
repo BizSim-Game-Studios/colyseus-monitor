@@ -20,7 +20,8 @@ export interface MonitorOptions {
         { metadata: string } |
         'processId' |
         "publicAddress"
-    >
+    >,
+    matchMaker: any
 }
 
 /**
@@ -29,6 +30,6 @@ export interface MonitorOptions {
 export function monitor (opts: Partial<MonitorOptions> = {}): express.Router {
     const router = express.Router();
     router.use(express.static(frontendDirectory));
-    router.use('/api', getAPI(opts));
+    router.use('/api', getAPI(opts, opts.matchMaker));
     return router;
 }
