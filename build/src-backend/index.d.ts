@@ -1,0 +1,12 @@
+import express from 'express';
+import './ext/Room.js';
+export interface MonitorOptions {
+    columns: Array<'roomId' | 'name' | 'clients' | 'maxClients' | 'locked' | 'elapsedTime' | {
+        metadata: string;
+    } | 'processId' | "publicAddress">;
+    matchMaker: any;
+}
+/**
+ * TODO: expose the `router` instead on next major version.
+ */
+export declare function monitor(opts?: Partial<MonitorOptions>): express.Router;
