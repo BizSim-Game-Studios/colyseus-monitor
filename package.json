@@ -41,8 +41,15 @@
     "url": "https://github.com/BizSim-Game-Studios/colyseus-monitor/issues"
   },
   "homepage": "https://colyseus.io",
-  "devDependencies": {
+  "peerDependencies": {
     "@bizsim-game-studios/colyseus-core": "^0.16.0",
+    "@bizsim-game-studios/colyseus": "^0.16.0"
+  },
+  "peerDependenciesMeta": {
+    "@bizsim-game-studios/colyseus-core": { "optional": true },
+    "@bizsim-game-studios/colyseus": { "optional": true }
+  },
+  "devDependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
@@ -54,7 +61,6 @@
     "@types/react": "^18.2.38",
     "@types/react-router-dom": "^4.2.6",
     "@types/superagent": "^3.5.8",
-    "@bizsim-game-studios/colyseus": "^0.16.0",
     "cross-env": "^10.1.0",
     "css-loader": "^0.28.11",
     "esbuild": "^0.25.0",
