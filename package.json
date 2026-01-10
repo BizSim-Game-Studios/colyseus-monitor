@@ -1,6 +1,6 @@
 {
   "name": "@bizsim-game-studios/colyseus-monitor",
-  "version": "0.16.7",
+  "version": "0.16.8",
   "description": "Web Monitoring Panel for Colyseus (BizSim fork)",
   "input": "./src/index.ts",
   "main": "./build/index.js",
@@ -50,7 +50,7 @@
     "@bizsim-game-studios/colyseus": { "optional": true }
   },
   "devDependencies": {
-    "@colyseus/core": "^0.16.0",
+    "@bizsim-game-studios/colyseus-core": "^0.16.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",

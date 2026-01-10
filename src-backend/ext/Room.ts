@@ -1,7 +1,7 @@
 //
 // Monkey-patch Colyseus' default behaviour
 //
-import { Room, Client, ClientPrivate } from "@colyseus/core";
+import { Room, Client, ClientPrivate } from "@bizsim-game-studios/colyseus-core";
 
 function getStateSize(room) {
     // TODO: `Serializer<T>` should provide a method for this (e.g. `serializer.hasState()`)

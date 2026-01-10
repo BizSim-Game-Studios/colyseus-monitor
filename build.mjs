@@ -61,7 +61,7 @@ async function main() {
     platform: "node",
     bundle: true,
     packages: "bundle",
-    external: ["express", "@colyseus/core", "@colyseus/schema", "@bizsim-game-studios/colyseus-core", "@bizsim-game-studios/colyseus-schema"],
+    external: ["express", "@bizsim-game-studios/colyseus-core", "@bizsim-game-studios/colyseus-schema"],
   });
 
   // ESM output
@@ -74,7 +74,7 @@ async function main() {
     bundle: true,
     sourcemap: "external",
     platform: "node",
-    external: ["express", "@colyseus/core", "@colyseus/schema", "@bizsim-game-studios/colyseus-core", "@bizsim-game-studios/colyseus-schema"],
+    external: ["express", "@bizsim-game-studios/colyseus-core", "@bizsim-game-studios/colyseus-schema"],
     outExtension: { '.js': '.mjs', },
     plugins: [
       {

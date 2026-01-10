@@ -1,5 +1,5 @@
 // src-backend/ext/Room.ts
-import { Room } from "@colyseus/core";
+import { Room } from "@bizsim-game-studios/colyseus-core";
 function getStateSize(room) {
   const hasState = room._serializer.encoder || // schema v3
   room._serializer.state || // schema v2
