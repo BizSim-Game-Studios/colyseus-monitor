@@ -1,7 +1,7 @@
 {
-  "name": "@colyseus/monitor",
+  "name": "@bizsim-game-studios/colyseus-monitor",
   "version": "0.16.7",
-  "description": "Web Monitoring Panel for Colyseus",
+  "description": "Web Monitoring Panel for Colyseus (BizSim fork)",
   "input": "./src/index.ts",
   "main": "./build/index.js",
   "module": "./build/index.mjs",
@@ -22,7 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/colyseus/colyseus.git"
+    "url": "git://github.com/BizSim-Game-Studios/colyseus-monitor.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "colyseus",
@@ -35,12 +38,11 @@
   "author": "Endel Dreyer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colyseus/colyseus/issues"
+    "url": "https://github.com/BizSim-Game-Studios/colyseus-monitor/issues"
   },
-  "homepage": "https://github.com/colyseus/colyseus#readme",
+  "homepage": "https://colyseus.io",
   "devDependencies": {
-    "@colyseus/core": "^0.16.0",
-    "@colyseus/playground": "^0.16.0",
+    "@bizsim-game-studios/colyseus-core": "^0.16.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
@@ -52,7 +54,7 @@
     "@types/react": "^18.2.38",
     "@types/react-router-dom": "^4.2.6",
     "@types/superagent": "^3.5.8",
-    "colyseus": "^0.16.0",
+    "@bizsim-game-studios/colyseus": "^0.16.0",
     "cross-env": "^10.1.0",
     "css-loader": "^0.28.11",
     "esbuild": "^0.25.0",
