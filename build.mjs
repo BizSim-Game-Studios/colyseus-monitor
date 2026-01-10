@@ -59,6 +59,9 @@ async function main() {
     target: "es2017",
     sourcemap: "external",
     platform: "node",
+    bundle: true,
+    packages: "bundle",
+    external: ["express"],
   });
 
   // ESM output
