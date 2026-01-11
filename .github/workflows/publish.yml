@@ -1,4 +1,4 @@
-name: Publish to GitHub Packages
+name: Publish to npm
 
 on:
   release:
@@ -11,7 +11,6 @@ on:
 
 permissions:
   contents: read
-  packages: write
 
 jobs:
   build-and-publish:
@@ -24,13 +23,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@bizsim-game-studios'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@bizsimgamestudios'
 
-      - name: Configure npm for GitHub Packages
+      - name: Configure npm for npmjs.org
         run: |
-          echo "@bizsim-game-studios:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
 
       - name: Install dependencies
         run: npm ci
@@ -38,7 +36,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Publish to GitHub Packages
-        run: npm publish
+      - name: Publish to npm
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
