@@ -1,5 +1,5 @@
 {
-  "name": "@bizsimgamestudios/colyseus-monitor",
+  "name": "@bizsim-game-studios/colyseus-monitor",
   "version": "0.16.9",
   "description": "Web Monitoring Panel for Colyseus (BizSim fork)",
   "input": "./src/index.ts",
@@ -42,15 +42,15 @@
   },
   "homepage": "https://colyseus.io",
   "peerDependencies": {
-    "@bizsimgamestudios/colyseus-core": "^0.16.0",
-    "@bizsimgamestudios/colyseus": "^0.16.0"
+    "@bizsim-game-studios/colyseus-core": "^0.16.44",
+    "@bizsim-game-studios/colyseus": "^0.16.0"
   },
   "peerDependenciesMeta": {
-    "@bizsimgamestudios/colyseus-core": { "optional": true },
-    "@bizsimgamestudios/colyseus": { "optional": true }
+    "@bizsim-game-studios/colyseus-core": { "optional": true },
+    "@bizsim-game-studios/colyseus": { "optional": true }
   },
   "devDependencies": {
-    "@bizsimgamestudios/colyseus-core": "^0.16.44",
+    "@bizsim-game-studios/colyseus-core": "^0.16.44",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
