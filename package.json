@@ -1,6 +1,6 @@
 {
-  "name": "@bizsim-game-studios/colyseus-monitor",
-  "version": "0.16.8",
+  "name": "@bizsimgamestudios/colyseus-monitor",
+  "version": "0.16.9",
   "description": "Web Monitoring Panel for Colyseus (BizSim fork)",
   "input": "./src/index.ts",
   "main": "./build/index.js",
@@ -25,7 +25,7 @@
     "url": "git://github.com/BizSim-Game-Studios/colyseus-monitor.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "keywords": [
     "colyseus",
@@ -42,15 +42,15 @@
   },
   "homepage": "https://colyseus.io",
   "peerDependencies": {
-    "@bizsim-game-studios/colyseus-core": "^0.16.0",
-    "@bizsim-game-studios/colyseus": "^0.16.0"
+    "@bizsimgamestudios/colyseus-core": "^0.16.0",
+    "@bizsimgamestudios/colyseus": "^0.16.0"
   },
   "peerDependenciesMeta": {
-    "@bizsim-game-studios/colyseus-core": { "optional": true },
-    "@bizsim-game-studios/colyseus": { "optional": true }
+    "@bizsimgamestudios/colyseus-core": { "optional": true },
+    "@bizsimgamestudios/colyseus": { "optional": true }
   },
   "devDependencies": {
-    "@bizsim-game-studios/colyseus-core": "^0.16.0",
+    "@bizsimgamestudios/colyseus-core": "^0.16.44",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
@@ -87,6 +87,5 @@
   "dependencies": {
     "express": ">=4.16.0",
     "node-os-utils": "^1.2.0"
-  },
-  "gitHead": "320a0325f01eff3cd7afa8fb2efa80077ebdbf4a"
+  }
 }
