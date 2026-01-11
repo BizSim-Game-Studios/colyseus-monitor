@@ -27,7 +27,7 @@ module.exports = function(options) {
 
     module: {
       rules: [
-        { test: /\.tsx?$/, loader: "ts-loader" },
+        { test: /\.tsx?$/, loader: "ts-loader", options: { transpileOnly: true } },
         { test: /\.css$/, loader: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" }) },
         { test: /\.(woff|woff2|eot|ttf|svg)$/, loader: 'file-loader?limit=1024&name=[name].[ext]' },
         { test: /\.mjs$/, include: /node_modules/, type: 'javascript/auto' },
